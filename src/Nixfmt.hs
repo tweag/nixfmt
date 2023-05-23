@@ -4,6 +4,7 @@
  - SPDX-License-Identifier: MPL-2.0
  -}
 
+
 module Nixfmt
     ( errorBundlePretty
     , ParseErrorBundle
