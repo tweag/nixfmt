@@ -619,7 +619,7 @@ instance Pretty Expression where
       absorbAbs _ expr | isAbsorbableExpr expr = hardspace <> group' Priority (absorbExpr False expr)
       -- Force the content onto a new line when it is not absorbable and there are more than two arguments
       absorbAbs depth x =
-        (if depth <= 2 then line else hardline) <> pretty x
+        (if depth <= 10 then line else hardline) <> pretty x
 
   -- Attrset parameter
   pretty (Abstraction param colon (Term t))
